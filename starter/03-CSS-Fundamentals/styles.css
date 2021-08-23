@@ -1,0 +1,174 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+/* Page selectors */
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
+}
+.container{
+  /* width: 80%; */
+  width: 800px;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+/* The best way of using inheritence is if you wanna select all elements from nav and make their font size 18pc */
+nav {
+  font-size: 18px;
+}
+article{
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+/* Small/element selectors */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 30px;
+  margin: 30px 0 40px 0;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline;
+}
+li:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+/* footer p{
+    font-size: 16px;
+} */
+/* article header p{
+    font-style: italic;
+} */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+#copyright {
+  font-size: 16px;
+}
+.blog-author {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+.related {
+  list-style: none;
+}
+/* If you want to select 2nd or 3rd then we use
+li:nth-child(2){you can also use odd or even in this list
+    ...
+}
+*/
+
+/* Styling links */
+/* Link = the anchor tags which has href */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+a:active {
+  background-color: orangered;
+  color: #fff;
+  font-size: 20px;
+}
+.post-image{
+  width: 100%;
+  height: auto;
+}
+
+nav a:link{
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child{
+  margin-right: 0;
+}
+
+/* Resolving conflicts 
+  0. Universal selector - *
+  1. Element selector - (p, div, li)
+  2. Class - (.)  --> of the last class
+  3. ID - (#) 
+  4. Inline Style --> the style in the HTML code
+  5. Declaartion marked `!important` has all priority
+*/
+/* #copyright{      ID 1
+  color: red;
+}
+.copyrigh{      /*Class 2.0
+  color: blue;
+}
+.text{      /*Class 2.1
+  color: yellow;
+}
+footer p{      /*Element Selector 3
+  color: green;
+  /* color: greenyellow !important; the highest priority 
+} */
+
+
