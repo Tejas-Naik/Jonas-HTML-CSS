@@ -1,0 +1,59 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* 
+COLOR system
+  Main color: #087f5b;
+  GREY color: #343a40;
+
+ */
+/* ICON Packs from heroicons.com */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+/* components */
+.accordion{
+    width: 700px;
+    margin: 96px auto;    /* Centering the div */
+    display: grid;
+    
+}
+.item{
+
+}
+.number, .text{
+  font-size: 24px;
+  font-weight: 500;
+  color: #087f5b;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    stroke: #087f5b;
+}
+.hidden-box{
+
+}
+.hidden-box p{
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.hidden-box ul{
+  color: #868e96;
+  margin-left: 20px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
